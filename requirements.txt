@@ -1,0 +1,11 @@
+# Práctica 2 — Búsqueda Informada y Local
+# Python >= 3.10
+ 
+# Tests
+pytest>=7.4.0
+pytest-cov>=4.1.0
+ 
+# La interfaz gráfica usa tkinter (incluido en la instalación estándar de Python).
+# No requiere instalación adicional en la mayoría de sistemas.
+# En Ubuntu/Debian: sudo apt-get install python3-tk
+ 
