@@ -28,4 +28,4 @@ ENV DISPLAY=:0
  
 # Comando por defecto: ejecutar los tests
 # Para la GUI: docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix practica2 python main.py
-CMD ["sh", "-c", "python -m pytest tests/ -v && python main.py"]
+CMD ["sh", "-c", "python3 -m pytest tests/ -v && python3 main.py"]
