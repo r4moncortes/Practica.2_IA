@@ -7,7 +7,7 @@ services:
     container_name: practica2_tests
     volumes:
       - .:/app
-    command: python -m pytest tests/ -v --tb=short --cov=src --cov-report=term-missing
+    command: python3 -m pytest tests/ -v --tb=short --cov=src --cov-report=term-missing
  
   # ── Servicio con GUI (requiere X11 en el host) ────────────────────────────
   app:
@@ -19,7 +19,7 @@ services:
       - .:/app
       - /tmp/.X11-unix:/tmp/.X11-unix   # socket X11 del host
     network_mode: host
-    command: python main.py
+    command: python3 main.py
     profiles:
       - gui     # solo se levanta con: docker compose --profile gui up app
  
